@@ -1,0 +1,35 @@
+/* MUSTAFA Taner - 315CB */ 105 PUNCTE
+
+	Programul contine 2 fisiere header: (explicate in comentarii)
+	1. "structuri.h" - contine structurile folosite;
+	2. "functii.h" - contine functii folosite in afara fisierului cu main.
+
+	Programul contine 3 fisiere .c cu functii: (explicate in comentarii)
+	1. "functiiLista.c" - functii de prelucrare liste generice;
+	2. "functiiStiva.c" - functii de prelucrare stive;
+	3. "functiiCoada.c" - functii de prelucrare cozi.
+
+	Fisierul "tema.c" contine:
+	1. Functia "main" in care:
+		- se deschid fisierele;
+		- se face citirea comenzilor si se apeleaza functiile coresp.;
+		- se apeleaza functia de eliberare a memoriei;
+		- se inchide fisierele.
+	2. Functia "add" in care:
+		 - daca exista sistemul de culoarea ceruta, se adauga ordonat
+		la acesta; in caz contrar, se creeaza un sistem nou.
+	3. Functia "play" care:
+		- returneaza pointer la sistemul de culoare ceruta;
+		- apeleaza functia "Simulare" care creeaza coada cu mutarile
+		simulate; aceasta este o functie recursiva, reprezinta
+		algoritmul specific rezolvarii problemei Turnurilor lui Hanoi;
+		- pt numarul de mutari cerute, extrage mutarea din coada si o
+		aplica cu functia "Transporta".
+	4. Functia "show_moves" care:
+		- cauta cu functia "play" sistemul de culoarea ceruta; "play"
+		creeaza si coada cu simularile mutarilor daca nu exista;
+		- pentru numarul de mutari cerute parcurge coada si o afiseaza.
+	5. Functia "afisare" care:
+		- pentru sistemul de culoarea ceruta, afiseaza discurile. Nu le
+		afiseaza pe cele cu diametru 0.
+	6. Functia "eliberare" care elibereaza toata memoria.
